@@ -1,0 +1,24 @@
+{
+"manifest_version": 2 ,
+"name":"Hackers Theme",
+"version":"1.0",
+"description":" black background and green text",
+"icons":{
+    "128":"images/logo128.png",
+    "48":"images/logo48.png",
+    "16":"images/logo16.png"
+},
+"browser_action":{
+    "default_icon":{
+        "16":"images/logo16.png",
+        "48":"images/logo48.png",
+        "128":"images/logo128.png"
+        },
+    "default_title":"makes background as black and text in green color."
+},
+"content_scripts":[
+    {"matches":["https://www.google.com/*"],
+    "css":["main.css"]
+    }
+]
+}
